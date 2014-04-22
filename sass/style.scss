@@ -56,6 +56,7 @@ body {
 
 
 
+
 .jumbotron {
 	background-color: $darkerbg_color;
 	color: $lighttext_color;
@@ -111,7 +112,8 @@ h3.panel-title {
 
 .tags {
 	border-top: solid 1px #ddd;
-	padding-top: 12px;
+	padding-top: 8px;
+	line-height: 200%;
 }
 
 .wide {
@@ -137,5 +139,16 @@ img.profile {
 	opacity: 0;
 }
 .fade-in.ng-leave {
+	opacity: 1;
+} 
+
+.websites {
+	-webkit-transition: 1s linear all;
+	transition: 1s linear all;
+}
+.websites.ng-enter {
+	opacity: 0;
+}
+.websites.ng-leave {
 	opacity: 1;
 } 

@@ -8,6 +8,7 @@ cvApp.config ($routeProvider) ->
       templateUrl: 'partials/home.html'
       controller: ''
     .when '/websites',
+      # templateUtl: 'partials/website_static.html'
       templateUrl: 'partials/websites.html'
       controller: ''
     .when '/cv/fi',

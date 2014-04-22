@@ -25,6 +25,7 @@
     "angularfire": "~0.7.1",
     "coffee-script": "~1.7.1",
     "angular-animate": "~1.2.16",
-    "jquery-cycle2": "~2.1.0"
+    "jquery-cycle2": "~2.1.0",
+    "animate.css": "~3.1.1"
   }
 }

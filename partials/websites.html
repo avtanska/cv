@@ -1,124 +1,19 @@
-<div class="row well">
-	<div class="col-lg-12 col-md-12">
-		<h3>avtanska.webfactional.com</h3>
-		<p>This site. :) </p>
-		<div class="tags">
-			<span class="label label-default">HTML</span>
-			<span class="label label-default">SASS</span>
-			<span class="label label-default">Bootstrap</span>
-			<span class="label label-default">CoffeeScript</span>
-			<span class="label label-default">AngularJS</span>
-			<span class="label label-default">Bower</span>
-			<span class="label label-default">Grunt</span>
+<div ng-controller="websiteFbCtrl">
+	<div class="row well websites" ng-repeat="website in websites">
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<h3>{{website.url}}</h3>
+			<p>{{website.description}}</p>
+			<div class="tags">
+				<span ng-repeat="tag in website.tags">
+					<span class="label label-default">{{tag}}</span>
+				</span>
+
+			</div>
 		</div>
-	</div>
-</div>
-
-<div class="row well">
-	<div class="col-lg-6 col-md-6">
-		<h3>www.kiuas.net</h3>
-		<p class="year">2003 - 2013</p>
-		<p>
-			Website for our heavy metal band Kiuas. Data such as gigs, news etc. are in a MySQL database. PHP is used to communicate with the DB and used for some other logic on the site.
-			Also includes a light admin page for updating news, gigs, reviews and interviews.
-			The site has gone through several designs throughout the years.
-			Most of the graphics by me.
-		</p>
-		<div class="tags">
-			<span class="label label-default">HTML</span>
-			<span class="label label-default">CSS</span>
-			<span class="label label-default">PHP</span>
-			<span class="label label-default">MySQL</span>
+		<div class="col-lg-6 col-md-6 col-sm-6">
+			<div class="">
+				<img ng-repeat="image in website.images" class="pull-right" ng-src="images/{{image}}">		
+			</div>
 		</div>
-	</div>
-
-	<div class="col-lg-6 col-md-6">
-		<img class="pull-right" src="images/django1.jpg">		
-	</div>
-</div>
-
-<div class="row well">
-	<div class="col-lg-6 col-md-6">
-		<h3>www.taisia.fi</h3>
-		<p class="year">2011</p>
-		<p>
-			Simple website for Taisia Ltd. Layout with HTML, CSS and jQuery. 
-			Some original layout elements are not in use yet on the live site (eg. blog).
-			<br><br>
-			The original layout:
-			<a href="http://atte.kiuas.net/taisia/taisia_test.htm">
-				atte.kiuas.net/taisia/
-			</a>
-		</p>
-		<div class="tags">
-			<span class="label label-default">HTML</span>
-			<span class="label label-default">CSS</span>
-			<span class="label label-default">jQuery</span>
-		</div>
-	</div>
-
-	<div class="col-lg-6 col-md-6">
-		<h4>Kuva taisiasta</h4>
-	</div>
-</div>
-
-<div class="row well">
-	<div class="col-lg-6 col-md-6">
-		<h3>www.viekas.fi</h3>
-		<p class="year">2004</p>
-		<p>
-			Website and CMS for Viestintäkasvatuksen seura ry. The original site is still up and running!
-			All graphics by me.
-		</p>
-		<div class="tags">
-			<span class="label label-default">HTML</span>
-			<span class="label label-default">CSS</span>
-			<span class="label label-default">PHP</span>
-			<span class="label label-default">MySQL</span>
-		</div>
-	</div>
-
-	<div class="col-lg-6 col-md-6">
-		<h4>Kuva viekkaasta</h4>
-	</div>
-</div>
-
-<div class="row well">
-	<div class="col-lg-6 col-md-6">
-		<h3>www.tauko.com</h3>
-		<p class="year">2006</p>
-		<p>
-			Website for Music school Tauko. Original site not available anymore.
-			Basic HTML + CSS and a form handler with PHP for enrolling to music classes. 
-			All graphics by me.			
-		</p>
-		<div class="tags">
-			<span class="label label-default">HTML</span>
-			<span class="label label-default">CSS</span>
-			<span class="label label-default">PHP</span>
-		</div>
-	</div>
-
-	<div class="col-lg-6 col-md-6">
-		<h4>Kuva alkuperäisestä Taukosta, löytyykö mistään?</h4>
-	</div>
-</div>
-
-<div class="row well">
-	<div class="col-lg-6 col-md-6">
-		<h3>www.tauko.com/studio</h3>
-		<p class="year">2006</p>
-		<p>
-			Website for the Studio of Music school Tauko. Original site not available anymore.
-			Basic HTML + CSS. All photos and graphics by me.			
-		</p>
-		<div class="tags">
-			<span class="label label-default">HTML</span>
-			<span class="label label-default">CSS</span>
-		</div>
-	</div>
-
-	<div class="col-lg-6 col-md-6">
-		<h4>Kuva alkuperäisestä Taukon studiosta, löytyykö mistään?</h4>
 	</div>
 </div>

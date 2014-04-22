@@ -1,3 +1,3 @@
 'use strict'
 
-cvApp = angular.module('cvApp', ['cvApp.routes', 'ngAnimate'])
+cvApp = angular.module('cvApp', ['cvApp.routes', 'cvApp.controllers', 'ngAnimate'])
