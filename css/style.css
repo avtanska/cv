@@ -74,6 +74,9 @@ img {
 img.profile {
   width: 200px; }
 
+.website-images {
+  margin-top: 20px; }
+
 .fade-in {
   -webkit-transition: 0.05s linear all;
   transition: 0.05s linear all; }
