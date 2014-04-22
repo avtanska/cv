@@ -52,8 +52,8 @@ h3.panel-title {
 
 .footer {
   padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #037e8c; }
+  color: #aaa;
+  border-top: 1px solid #ccc; }
 
 .year {
   font-size: 100%;
@@ -76,26 +76,6 @@ img.profile {
 
 .website-images {
   margin-top: 20px; }
-
-.fade-in {
-  -webkit-transition: 0.05s linear all;
-  transition: 0.05s linear all; }
-
-.fade-in.ng-enter {
-  opacity: 0; }
-
-.fade-in.ng-leave {
-  opacity: 1; }
-
-.websites {
-  -webkit-transition: 1s linear all;
-  transition: 1s linear all; }
-
-.websites.ng-enter {
-  opacity: 0; }
-
-.websites.ng-leave {
-  opacity: 1; }
 
 .tag.ng-enter {
   -webkit-animation: bounceIn 1s;
