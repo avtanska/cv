@@ -1,0 +1,141 @@
+
+// selected works @ kuler.adobe.com
+
+$darkerbg_color: #024959;
+$lighterbg_color: #037E8C;
+$darktext_color: #404040;
+$lighttext_color: #F2EFE9;
+$highlight_color: #F2CA59;
+
+// copy of cubbage @ kuler.adobe.com
+
+// $darkerbg_color: #2A535C;
+// $lighterbg_color: #60918E;
+// $darktext_color: #1C2121;
+// $lighttext_color: #FAF4D9;
+// $highlight_color: #E8CD6E;
+
+
+
+$jumbotron_font: 'Inder';
+
+body {
+	background-color: #fff;
+	font-family: 'Open Sans';
+	padding: 20px;
+	padding-top: 70px;
+	color: $darktext_color;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+	.container {
+		max-width: 730px;
+	}
+}
+
+
+// navbar custom styles
+
+.navbar-default {
+	border-bottom: solid 2px $darkerbg_color;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: #333;
+	background-color: #EEE;
+}
+
+.navbar-default .navbar-nav > .active > a,  
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: $lighttext_color;
+	background-color: $darkerbg_color;
+}
+
+
+
+.jumbotron {
+	background-color: $darkerbg_color;
+	color: $lighttext_color;
+	padding: 10px 10px 30px 10px; 
+	font-family: $jumbotron_font;
+
+	h1 {
+		border-bottom: 3px solid $highlight_color;
+		padding-bottom: 13px;
+	}
+
+	h3 {
+		color: $lighttext_color
+	}
+}
+
+
+h4 {
+	font-family: $jumbotron_font;
+	color: $darkerbg_color;
+}
+
+h3 {
+	font-family: $jumbotron_font;
+	color: $darkerbg_color;
+}
+
+h3.panel-title {
+	text-transform: uppercase;
+}
+
+
+// general classes
+
+.well {
+	border-top: solid 2px $darkerbg_color;
+}
+
+.label-default {
+	background-color: $lighterbg_color;
+}
+
+.footer {
+	padding-top: 19px;
+	color: #777;
+	border-top: 1px solid $lighterbg_color;
+}
+
+.year {
+	font-size: 100%;
+	color: #777;
+}
+
+.tags {
+	border-top: solid 1px #ddd;
+	padding-top: 12px;
+}
+
+.wide {
+	letter-spacing: 0.2em;
+}
+
+img {
+	border-radius: 5px;
+	border: solid 1px #ccc;
+}
+
+img.profile {
+	width: 200px;
+}
+
+// ng-animate styles
+
+.fade-in {
+	-webkit-transition: 0.05s linear all;
+	transition: 0.05s linear all;
+}
+.fade-in.ng-enter {
+	opacity: 0;
+}
+.fade-in.ng-leave {
+	opacity: 1;
+} 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cvApp">
+<head>
+	<title>Atte Tanskanen - selected works</title>
+	<meta charset="UTF-8">
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Roboto Slab:100,300,400,700|Inder:400' rel='stylesheet' type='text/css'>
+	<!-- Bootstrap CSS -->
+	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/firebase/firebase.js"></script>
+	<script src="bower_components/firebase-simple-login/firebase-simple-login.js"></script>
+	<script src="bower_components/angularfire/angularfire.js"></script>
+	<script src="bower_components/angular-animate/angular-animate.js"></script>
+	<script src="bower_components/jquery-cycle2/build/jquery.cycle2.js"></script>
+	<!-- endbower -->
+	<script src="js/app.js"></script>
+	<script src="js/routes.js"></script>	
+</head>
+<body>
+	<div class="container">
+
+		<!-- Navigation -->
+
+		<div class="navbar navbar-default navbar-fixed-top row" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand active" href="/">Atte Tanskanen</a>
+				</div><!--/.navbar-header -->
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="" class="dropdown-toggle" data-toggle="dropdown">CV <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#/cv/fi">Suomeksi</a></li>
+								<li><a href="#/cv/en">In English</a></li>
+							</ul>
+						</li>
+						<li><a href="#/websites">Websites</a></li>
+						<li><a href="#/github">GitHub</a></li>	
+						<li><a href="#/interests">Interests</a></li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<!-- Header -->
+
+		<div class="row jumbotron">
+			<h1>Atte Tanskanen</h1>
+			<h3 class="wide">SELECTED WORKS</h3>
+		</div>
+
+
+		<!-- Content -->
+
+		<div class="fade-in" ng-view></div>
+
+
+		<!-- Footer -->
+
+		<div class="row footer">
+			<div class="col-lg-12 col-md-12">
+				<p>&copy; Atte Tanskanen 2014</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
