@@ -1,7 +1,7 @@
-<div ng-controller="websiteCtrl">
+<div ng-controller="websiteCtrl" data-spy="scroll" data-target=".navbar-example">
 	<div class="row well websites" ng-repeat="website in websites">
 		<div class="col-lg-6 col-md-6 col-sm-6">
-			<h3>{{website.url}}</h3>
+			<h3 id="{{website.id}}">{{website.url}}</h3>
 			<p class="year">{{website.year}}</p>
 			<p class="website-desc">{{website.description}}</p>
 			<div class="tags">
@@ -14,7 +14,7 @@
 		<div class="col-lg-6 col-md-6 col-sm-6">
 			<div class="website-images">
 				<div ng-repeat="image in website.images">
-					<img ng-src="images/{{image}}">					
+					<a href="http://{{website.url}}"><img ng-src="images/{{image}}"></a>
 				</div>
 			</div>
 

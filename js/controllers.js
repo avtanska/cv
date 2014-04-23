@@ -4,7 +4,7 @@
 
   site_data = 'src/site_data.json';
 
-  cvApp = angular.module('cvApp.controllers', ['firebase']);
+  cvApp = angular.module('cvApp.controllers', ['firebase', 'ngSanitize']);
 
   cvApp.controller('websiteCtrl', [
     '$scope', '$http', function($scope, $http) {

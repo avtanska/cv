@@ -2,10 +2,10 @@
 
 site_data = 'src/site_data.json'
 
-cvApp = angular.module 'cvApp.controllers', ['firebase']
+cvApp = angular.module 'cvApp.controllers', ['firebase', 'ngSanitize']
 
 cvApp.controller 'websiteCtrl', ['$scope', '$http', ($scope, $http) ->
-    $http.get(site_data).success (data) ->
+	$http.get(site_data).success (data) ->
         $scope.websites = data.websites
 ]
 

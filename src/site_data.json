@@ -1,53 +1,67 @@
 {
   "websites": [
     {
+	  "id": "webfaction",
       "url": "avtanska.webfaction.com",
       "year": "2014",
-      "description": "This site. :) Simple website to display blaalbaa, AngularJS, Firebase diibadaaba",
+      "description": "This site. :) Simple website to display my interests and work experience. Used Bower, Grunt, Bootstrap, SASS, CoffeeScript and AngularJS for learning new things. Threw in a Firebase back-end for the Websites page just for fun, a little overkill and slow for this site, but just testing it out.",
       "tags": ["HTML", "SASS", "Bootstrap", "CoffeeScript", "AngularJS", "Firebase", "JSON"],
-      "images": ["webfaction_ref.jpg"]
-    }, 
+      "images": ["webfaction_ref.jpg"],
+	  "site_exists": "true"
+    },
     {
+	  "id": "kiuas",
       "url": "www.kiuas.net",
       "year": "2003-2013",
-      "description": "Website for our heavy metal band Kiuas. Data such as gigs, news etc. are in a MySQL database. PHP is used for db connection and throughout the site. Also includes a light admin page for updating news, gigs, reviews and interviews. The site has gone through several designs throughout the years. Website administration and most of the graphics by me.",
+      "description": "Website for our heavy metal band Kiuas. Data such as gigs, news etc. are in a MySQL database. PHP is used throughout the site. Also includes a light admin page for updating news, gigs, reviews and interviews. The site has gone through several designs throughout the years. Website administration and most of the graphics by me.",
       "tags": ["HTML", "CSS", "PHP", "MySQL"],
-      "images": ["kiuas_ref.jpg"]
+      "images": ["kiuas_ref.jpg"],
+	  "site_exists": "true"
     },
     {
+	  "id": "taisia",
       "url": "www.taisia.fi",
       "year": "2011",
-      "description": "Simple website for Taisia Ltd. Layout with HTML, CSS and jQuery.Some original layout elements are not in use yet on the live site (eg. blog).",
+      "description": "Simple website for Taisia Ltd. Layout with HTML, CSS and jQuery. Some original layout elements are not in use yet on the live site (eg. blog). Original layout can be found at http://atte.kiuas.net/taisia/taisia_test.htm",
       "tags": ["HTML", "CSS", "jQuery"],
-      "images": ["taisia_ref.jpg"]
+      "images": ["taisia_ref.jpg"],
+	  "site_exists": "true"
     },
     {
-      "url": "www.viekas.fi",
-      "year": "2004",
-      "description": "Website and CMS for Viestintäkasvatuksen seura ry. The original site is still up and running! All graphics by me.",
-      "tags": ["HTML", "CSS", "PHP", "MySQL"],
-      "images": ["viekas_ref.jpg"]
-    },
-    {
+	  "id": "tauko",
       "url": "www.tauko.com",
       "year": "2006",
       "description": "Website for Music school Tauko. Original site not available anymore. Basic HTML + CSS and a form handler with PHP for enrolling to music classes. All graphics by me.",
       "tags": ["HTML", "CSS", "PHP", "MySQL"],
-      "images": ["tauko_ref.jpg"]
+      "images": "",
+	  "site_exists": "false"
     },
     {
+	  "id": "studiotauko",
       "url": "www.tauko.com/studio",
       "year": "2006",
       "description": "Website for the Studio of Music school Tauko. Original site not available anymore. Basic HTML + CSS. All photos and graphics by me.",
       "tags": ["HTML", "CSS"],
-      "images": ["studiotauko_ref.jpg"]
+      "images": ["studiotauko_ref.jpg"],
+	  "site_exists": "false"
+    },
+	{
+	  "id": "viekas",
+      "url": "www.viekas.fi",
+      "year": "2004",
+      "description": "Website and an admin CMS for Viestintäkasvatuksen seura ry. PHP was used extensively on this site. The original site is still up and running! All graphics by me.",
+      "tags": ["HTML", "CSS", "PHP", "MySQL"],
+      "images": ["viekas_ref.jpg"],
+	  "site_exists": "true"
     },
     {
+	  "id": "hsg",
       "url": "helsinkiscootergirls.tk",
       "year": "2004",
       "description": "Website for Hellsinki Scooter Girls, Vespa scooter club. Original site not available anymore. HTML, CSS and PHP for guestbook and events. All graphics by me.",
       "tags": ["HTML", "CSS", "PHP"],
-      "images": ["hsg_ref.jpg"]
+      "images": ["hsg_ref.jpg"],
+	  "site_exists": "false"
     }
   ]
 }
