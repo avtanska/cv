@@ -1,7 +1,7 @@
 
 // selected works @ kuler.adobe.com
 
-$darkerbg_color: #024959;
+$darkerbg_color: #444;
 $lighterbg_color: #037E8C;
 $darktext_color: #404040;
 $lighttext_color: #F2EFE9;
@@ -15,7 +15,7 @@ $highlight_color: #F2CA59;
 // $lighttext_color: #FAF4D9;
 // $highlight_color: #E8CD6E;
 
-
+$bg_texture: url("../images/texture.png");
 
 $jumbotron_font: 'Inder';
 
@@ -54,13 +54,24 @@ body {
 }
 
 
+h4 {
+	font-family: $jumbotron_font;
+	color: $darkerbg_color;
+}
+
+h3.panel-title {
+	text-transform: uppercase;
+	border: none;
+}
 
 
 .jumbotron {
 	background-color: $darkerbg_color;
+	background: $bg_texture;
 	color: $lighttext_color;
-	padding: 10px 10px 30px 10px; 
+	padding: 0px 15px 15px 15px; 
 	font-family: $jumbotron_font;
+	margin-bottom: 20px;
 
 	h1 {
 		border-bottom: 3px solid $highlight_color;
@@ -68,25 +79,18 @@ body {
 	}
 
 	h3 {
-		color: $lighttext_color
+		color: $lighttext_color;
+		border: none;
 	}
-}
-
-
-h4 {
-	font-family: $jumbotron_font;
-	color: $darkerbg_color;
 }
 
 h3 {
 	font-family: $jumbotron_font;
 	color: $darkerbg_color;
+	border-bottom: solid 1px $highlight_color;
+	padding-bottom: 10px;
+	margin-top: 5px;
 }
-
-h3.panel-title {
-	text-transform: uppercase;
-}
-
 
 // general classes
 
@@ -95,7 +99,7 @@ h3.panel-title {
 }
 
 .label-default {
-	background-color: $lighterbg_color;
+	background-color: #999;
 }
 
 .footer {
@@ -107,6 +111,15 @@ h3.panel-title {
 .year {
 	font-size: 100%;
 	color: #777;
+}
+
+td.year {
+	width: 150px;
+}
+
+p.website-desc {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .tags {
@@ -129,7 +142,7 @@ img.profile {
 }
 
 .website-images {
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 // ng-animate styles

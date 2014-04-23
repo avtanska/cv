@@ -2,7 +2,8 @@
 	<div class="row well websites" ng-repeat="website in websites">
 		<div class="col-lg-6 col-md-6 col-sm-6">
 			<h3>{{website.url}}</h3>
-			<p>{{website.description}}</p>
+			<p class="year">{{website.year}}</p>
+			<p class="website-desc">{{website.description}}</p>
 			<div class="tags">
 				<span class="tag" ng-repeat="tag in website.tags">
 					<span class="label label-default">{{tag}}</span>
