@@ -1,15 +1,4 @@
-_Work in progress_
-
 Description
 ===========
-A collection of some of my work and interests in web development.
-
-Websites
--------
-
-### www.kiuas.net
-
-### www.viekas.fi
-
-### www.taisia.fi
+A repo for the site at avtanska.webfaction.com. A collection of some of my work experience, CV and interests in web development.
 
