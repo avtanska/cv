@@ -9,7 +9,8 @@ cvApp.controller 'websiteCtrl', ['$scope', '$http', ($scope, $http) ->
         $scope.websites = data.websites
 ]
 
-cvApp.controller 'websiteFbCtrl', ['$scope', '$firebase', ($scope, $firebase) ->
-    websiteRef = new Firebase("https://blazing-fire-6088.firebaseio.com/websites");
-    $scope.websites = $firebase(websiteRef);
-]
+
+# cvApp.controller 'websiteFbCtrl', ['$scope', '$firebase', ($scope, $firebase) ->
+#     websiteRef = new Firebase("https://blazing-fire-6088.firebaseio.com/websites");
+#     $scope.websites = $firebase(websiteRef);
+# ]

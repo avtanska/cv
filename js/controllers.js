@@ -14,12 +14,4 @@
     }
   ]);
 
-  cvApp.controller('websiteFbCtrl', [
-    '$scope', '$firebase', function($scope, $firebase) {
-      var websiteRef;
-      websiteRef = new Firebase("https://blazing-fire-6088.firebaseio.com/websites");
-      return $scope.websites = $firebase(websiteRef);
-    }
-  ]);
-
 }).call(this);
