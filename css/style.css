@@ -22,6 +22,12 @@ body {
   color: #f2efe9;
   background-color: #444444; }
 
+.navbar-default .navbar-nav > li > ul > .active > a,
+.navbar-default .navbar-nav > li > ul > .active > a:hover,
+.navbar-default .navbar-nav > li > ul > .active > a:focus {
+  color: #f2efe9;
+  background-color: #444444; }
+
 h4 {
   font-family: "Inder";
   color: #444444; }
