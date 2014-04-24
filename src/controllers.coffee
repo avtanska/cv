@@ -6,10 +6,13 @@ cvApp.controller 'WebsitesCtrl', ['$scope', 'websiteFactory', ($scope, websiteFa
 	$scope.websites = websiteFactory.websites
 ]
 
-cvApp.controller 'NavCtrl', ['$scope', '$location', ($scope, $location) ->
+cvApp.controller 'NavCtrl', ['$scope', '$location', '$anchorScroll', ($scope, $location, $anchorScroll) ->
 	$scope.isActive = (route) ->
 		path = $location.path()
-		path.indexOf(route) > -1 
+		path.indexOf(route) > -1
+	$scope.goToTop = ->
+		$location.hash('top')
+		$anchorScroll()
 ]
 
 # cvApp.controller 'websiteFbCtrl', ['$scope', '$firebase', ($scope, $firebase) ->

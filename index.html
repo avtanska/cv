@@ -23,6 +23,7 @@
 	<script src="bower_components/jquery-cycle2/build/jquery.cycle2.js"></script>
 	<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 	<script src="bower_components/angular-mocks/angular-mocks.js"></script>
+	<script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
 	<!-- endbower -->
 	<!-- <script src="js/ui-bootstrap-0.10.0.min.js"></script> -->
 	<script src="js/app.js"></script>
@@ -46,20 +47,20 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a ng-class="{active: isActive('/')}" class="navbar-brand active" href="/">Atte Tanskanen</a>
+					<a ng-click="goToTop()" ng-class="{active: isActive('/')}" class="navbar-brand active" href="/">Atte Tanskanen</a>
 				</div><!--/.navbar-header -->
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
 						<li ng-class="{active: isActive('/cv')}" class="dropdown">
 							<a href="" class="dropdown-toggle" data-toggle="dropdown">CV <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li ng-class="{active: isActive('/cv/fi')}"><a href="#/cv/fi">Suomeksi</a></li>
-								<li ng-class="{active: isActive('/cv/en')}"><a href="#/cv/en">In English</a></li>
+								<li ng-class="{active: isActive('/cv/fi')}"><a ng-click="goToTop()" href="#/cv/fi">Suomeksi</a></li>
+								<li ng-class="{active: isActive('/cv/en')}"><a ng-click="goToTop()" href="#/cv/en">In English</a></li>
 							</ul>
 						</li>
-						<li ng-class="{active: isActive('/websites')}"><a href="#/websites">Websites</a></li>
-						<li ng-class="{active: isActive('/github')}"><a href="#/github">GitHub</a></li>	
-						<li ng-class="{active: isActive('/interests')}"><a href="#/interests">Interests</a></li>
+						<li ng-class="{active: isActive('/websites')}"><a ng-click="goToTop()" href="#/websites">Websites</a></li>
+						<li ng-class="{active: isActive('/github')}"><a ng-click="goToTop()" href="#/github">GitHub</a></li>	
+						<li ng-class="{active: isActive('/interests')}"><a ng-click="goToTop()" href="#/interests">Interests</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
@@ -68,13 +69,14 @@
 		<!-- Header -->
 
 		<div class="row jumbotron">
+			<a id="top"></a>
 			<h1>Atte Tanskanen</h1>
 			<h3 class="wide">SELECTED WORKS</h3>
 		</div>
 
 
 		<!-- Content -->
-		<div ng-view></div>
+		<div class="fade-in" ng-view></div>
 
 
 		<!-- Footer -->
