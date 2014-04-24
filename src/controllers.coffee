@@ -1,12 +1,10 @@
 'use strict'
 
-site_data = 'src/site_data.json'
-
 cvApp = angular.module 'cvApp.controllers', ['firebase', 'ngSanitize']
 
-cvApp.controller 'WebsitesCtrl', ['$scope', '$http', ($scope, $http) ->
-	$http.get(site_data).success (data) ->
-        	$scope.websites = data.websites
+cvApp.controller 'WebsitesCtrl', ['$scope', 'websiteFactory', ($scope, websiteFactory) ->
+	$scope.websites = websiteFactory.data
+	console.log $scope.websites
 ]
 
 cvApp.controller 'NavCtrl', ['$scope', '$location', ($scope, $location) ->
