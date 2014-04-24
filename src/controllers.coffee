@@ -1,6 +1,6 @@
 'use strict'
 
-cvApp = angular.module 'cvApp.controllers', ['firebase']
+cvApp = angular.module 'cvApp.controllers', []
 
 cvApp.controller 'WebsitesCtrl', ['$scope', 'websiteFactory', ($scope, websiteFactory) ->
 	$scope.websites = websiteFactory.websites

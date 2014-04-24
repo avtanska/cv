@@ -25,18 +25,22 @@ module.exports = (grunt) ->
         src: 'index.html' # point to your HTML file.
 
     coffee:
-      all:
+      app:
         expand: true
         cwd: 'src/'
         src: '*.coffee'
         dest: 'js/'
         ext: '.js'
+      test:
+        expand: true
+        cwd: 'test/unit/src/'
+        src: '*.coffee'
+        dest: 'test/unit/'
+        ext: '.js'
 
     karma:
       unit:
         configFile: 'karma.conf.coffee'
-      e2e:
-        configFile: 'karma-e2e.conf.coffee'
 
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
@@ -48,6 +52,3 @@ module.exports = (grunt) ->
     'sass'
     'coffee'
   ]
-  return
-
-# grunt.registerTask('watch',['watch']);

@@ -27,6 +27,7 @@
     "angular-animate": "~1.2.16",
     "jquery-cycle2": "~2.1.0",
     "animate.css": "~3.1.1",
-    "angular-sanitize": "~1.2.16"
+    "angular-sanitize": "~1.2.16",
+    "angular-mocks": "~1.2.16"
   }
 }
