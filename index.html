@@ -51,8 +51,8 @@
 						<li ng-class="{active: isActive('/cv')}" class="dropdown">
 							<a href="" class="dropdown-toggle" data-toggle="dropdown">CV <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#/cv/fi">Suomeksi</a></li>
-								<li><a href="#/cv/en">In English</a></li>
+								<li ng-class="{active: isActive('/cv/fi')}"><a href="#/cv/fi">Suomeksi</a></li>
+								<li ng-class="{active: isActive('/cv/en')}"><a href="#/cv/en">In English</a></li>
 							</ul>
 						</li>
 						<li ng-class="{active: isActive('/websites')}"><a href="#/websites">Websites</a></li>

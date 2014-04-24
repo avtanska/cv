@@ -53,6 +53,14 @@ body {
 	background-color: $darkerbg_color;
 }
 
+.navbar-default .navbar-nav > li > ul > .active > a,
+.navbar-default .navbar-nav > li > ul > .active > a:hover,
+.navbar-default .navbar-nav > li > ul > .active > a:focus {
+        color: $lighttext_color;
+        background-color: $darkerbg_color;
+}
+
+
 
 h4 {
 	font-family: $jumbotron_font;

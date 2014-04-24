@@ -4,16 +4,15 @@ site_data = 'src/site_data.json'
 
 cvApp = angular.module 'cvApp.controllers', ['firebase', 'ngSanitize']
 
-cvApp.controller 'WebsitesCtrl', ['$scope', '$http', '$location', ($scope, $http, $location) ->
-	$scope.isActive = (route) ->
-      	  	return route == $location.path()
+cvApp.controller 'WebsitesCtrl', ['$scope', '$http', ($scope, $http) ->
 	$http.get(site_data).success (data) ->
         	$scope.websites = data.websites
 ]
 
 cvApp.controller 'NavCtrl', ['$scope', '$location', ($scope, $location) ->
-    $scope.isActive = (route) ->
-        route == $location.path()
+	$scope.isActive = (route) ->
+		path = $location.path()
+		path.indexOf(route) > -1 
 ]
 
 # cvApp.controller 'websiteFbCtrl', ['$scope', '$firebase', ($scope, $firebase) ->

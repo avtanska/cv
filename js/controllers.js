@@ -7,10 +7,7 @@
   cvApp = angular.module('cvApp.controllers', ['firebase', 'ngSanitize']);
 
   cvApp.controller('WebsitesCtrl', [
-    '$scope', '$http', '$location', function($scope, $http, $location) {
-      $scope.isActive = function(route) {
-        return route === $location.path();
-      };
+    '$scope', '$http', function($scope, $http) {
       return $http.get(site_data).success(function(data) {
         return $scope.websites = data.websites;
       });
@@ -20,7 +17,9 @@
   cvApp.controller('NavCtrl', [
     '$scope', '$location', function($scope, $location) {
       return $scope.isActive = function(route) {
-        return route === $location.path();
+        var path;
+        path = $location.path();
+        return path.indexOf(route) > -1;
       };
     }
   ]);
