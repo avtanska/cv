@@ -2,21 +2,17 @@
   'use strict';
   var cvApp, site_data;
 
-  cvApp = angular.module('cvApp.services', []);
+  cvApp = angular.module('cvApp.services', ['firebase']);
 
   site_data = 'src/site_data.json';
 
   cvApp.factory('websiteFactory', [
-    '$http', '$timeout', function($http, $timeout) {
-      var site;
-      console.log('inside websiteFactory');
-      site = $http.get(site_data).success(function(data) {
-        console.log('haettiin koko data');
-        return data;
-      });
-      console.log('palautetaan site.websites');
+    '$http', '$firebase', function($http, $firebase) {
+      var websiteRef, websites;
+      websiteRef = new Firebase("https://blazing-fire-6088.firebaseio.com/websites");
+      websites = $firebase(websiteRef);
       return {
-        data: site.websites
+        websites: websites
       };
     }
   ]);

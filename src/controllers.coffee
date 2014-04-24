@@ -1,10 +1,9 @@
 'use strict'
 
-cvApp = angular.module 'cvApp.controllers', ['firebase', 'ngSanitize']
+cvApp = angular.module 'cvApp.controllers', ['firebase']
 
 cvApp.controller 'WebsitesCtrl', ['$scope', 'websiteFactory', ($scope, websiteFactory) ->
-	$scope.websites = websiteFactory.data
-	console.log $scope.websites
+	$scope.websites = websiteFactory.websites
 ]
 
 cvApp.controller 'NavCtrl', ['$scope', '$location', ($scope, $location) ->

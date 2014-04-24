@@ -2,12 +2,12 @@
   'use strict';
   var cvApp;
 
-  cvApp = angular.module('cvApp.controllers', ['firebase', 'ngSanitize']);
+  cvApp = angular.module('cvApp.controllers', ['firebase']);
 
   cvApp.controller('WebsitesCtrl', [
     '$scope', 'websiteFactory', function($scope, websiteFactory) {
-      $scope.websites = websiteFactory.data;
-      return console.log($scope.websites);
+      $scope.websites = websiteFactory.websites;
+      return console.log('ladattiin firebase data');
     }
   ]);
 
