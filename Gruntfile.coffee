@@ -41,7 +41,15 @@ module.exports = (grunt) ->
     karma:
       unit:
         configFile: 'karma.conf.coffee'
+    
+    casperjs: 
+      options:
+        async:
+          parallel: false
+      files: ['test/e2e/*.coffee']
 
+
+  grunt.loadNpmTasks 'grunt-casperjs'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-watch'
