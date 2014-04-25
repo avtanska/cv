@@ -4,6 +4,8 @@ cvApp = angular.module 'cvApp.controllers', []
 
 cvApp.controller 'WebsitesCtrl', ['$scope', 'websiteFactory', ($scope, websiteFactory) ->
 	$scope.websites = websiteFactory.websites
+	$scope.websites.$on 'loaded', ->
+		$scope.websitesLoaded = true
 ]
 
 cvApp.controller 'NavCtrl', ['$scope', '$location', '$anchorScroll', ($scope, $location, $anchorScroll) ->

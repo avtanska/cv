@@ -6,7 +6,10 @@
 
   cvApp.controller('WebsitesCtrl', [
     '$scope', 'websiteFactory', function($scope, websiteFactory) {
-      return $scope.websites = websiteFactory.websites;
+      $scope.websites = websiteFactory.websites;
+      return $scope.websites.$on('loaded', function() {
+        return $scope.websitesLoaded = true;
+      });
     }
   ]);
 

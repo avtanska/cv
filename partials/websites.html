@@ -1,5 +1,8 @@
 <div ng-controller="WebsitesCtrl">
-	<div class="row well websites" ng-repeat="website in websites">
+	<div class="row loader" ng-hide="websitesLoaded">
+		<img class="no-border" src="images/ajax-loader.gif" alt="Loading...">
+	</div>
+	<div ng-show="websitesLoaded" class="row well websites" ng-repeat="website in websites">
 		<div class="col-lg-6 col-md-6 col-sm-6">
 			<h3 id="{{website.id}}">{{website.url}}</h3>
 			<p class="year">{{website.year}}</p>
